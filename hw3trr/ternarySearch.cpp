@@ -14,11 +14,11 @@ while (left < right)
 
     if x = a[mid1] then loca = mid1; break;
     else if x = a[mid2] then loca = mid2; break;
-    else if x < mid1 then right = mid1-1;
-    else if x > mid2 then left = mid2+1;
+    else if x < a[mid1] then right = mid1-1;
+    else if x > a[mid2] then left = mid2+1;
     else left = mid1 and right = mid2;
 }
-return loca ( loca la chi so duoi so hang bang key hoac bang 0 neu khong tim thay key)
+return loca; ( loca la chi so duoi so hang bang key hoac bang 0 neu khong tim thay key)
 }
 
 Cau 3
@@ -33,7 +33,7 @@ Cau 4
 Lan lap thu nhat, pham vi tim kiem la n phan tu.
 Lan lap thu 2, pham vi tim kiem la n/3
 ...
-Truong hop xau nhat, vong lap ket thuc khi pham vi tìm kiem n/(3^i) = 1 hay i = log3(n)
+Truong hop xau nhat, vong lap ket thuc khi pham vi tÄ›m kiem n/(3^i) = 1 hay i = log3(n)
 Coi moi lan lap thoi gian la O(1) thi thoi gian ham thuc hien la O(log3(n))
 => Vay do phuc tap thoi gian O(log3(n)) voi n la so phan tu cua day
 */
